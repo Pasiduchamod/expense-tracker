@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.body{
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.container{
+  text-align: center;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 20px auto;
+  max-width: 500px;
+  background: rgb(52, 116, 255);
+  padding: 30px;
+  font-weight: bolder;
+  border-radius: 10px;
+  color: aliceblue;
 }
 
-.App-link {
-  color: #61dafb;
+.balance{
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.incexp{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inc,
+.exp{
+  margin: 20px auto;
+  background: white;
+  width: 100%;
+  border: 1px solid rgb(52, 116, 255);
+  border-radius: 8px;
+  padding: 10px;
+  color: rgb(52, 116, 255);
+}
+
+#money-plus{
+  color: rgb(66, 161, 44);
+}
+#money-minus{
+  color: rgb(255, 78, 78);
+}
+
+.transition-list h3{
+  margin-top: 20px;
+  justify-content: left;
+  align-items: start;
+  text-align: left;
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+}
+
+.transition-list-{
+  display: flex;
+  background: white;
+  color:rgb(52, 116, 255) ;
+  padding: 10px;
+  margin: 20px auto;
+  border-right: 10px solid rgb(128, 0, 0);
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.transaction h3{
+  margin-top: 60px;
+  justify-content: left;
+  align-items: start;
+  text-align: left;
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+}
+.transaction p{
+  margin-top: 20px;
+  text-align: left;
+}
+.transaction input{
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+.transaction button{
+  margin-top: 20px;
+  width: 100%;
+  background: aliceblue;
+  color: rgb(52, 116, 255);
+  padding: 12px;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.transaction button:hover{
+  background: rgb(255, 100, 77);
+  color:aliceblue;
+  transition: .5s;
 }
