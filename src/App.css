@@ -15,9 +15,9 @@
   align-items: center;
   justify-content: center;
   margin: 20px auto;
-  max-width: 500px;
+  max-width: 550px;
   background: rgb(52, 116, 255);
-  padding: 30px;
+  padding: 50px;
   font-weight: bolder;
   border-radius: 10px;
   color: aliceblue;
@@ -61,7 +61,7 @@
   padding-bottom: 20px;
 }
 
-.transition-list-{
+.minus{
   display: flex;
   background: white;
   color:rgb(52, 116, 255) ;
@@ -70,6 +70,18 @@
   border-right: 10px solid rgb(128, 0, 0);
   justify-content: space-between;
   border-radius: 10px;
+  position: relative;
+}
+.plus{
+  display: flex;
+  background: white;
+  color:rgb(52, 116, 255) ;
+  padding: 10px;
+  margin: 20px auto;
+  border-right: 10px solid rgb(0, 128, 6);
+  justify-content: space-between;
+  border-radius: 10px;
+  position: relative;
 }
 
 .transaction h3{
@@ -93,7 +105,7 @@
   border: none;
 }
 .transaction button{
-  margin-top: 20px;
+  margin-top: 40px;
   width: 100%;
   background: aliceblue;
   color: rgb(52, 116, 255);
@@ -109,4 +121,30 @@
   background: rgb(255, 100, 77);
   color:aliceblue;
   transition: .5s;
+}
+
+.delete-btn{
+  cursor: pointer;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  align-items: center;
+  top: 50%;
+  transform: translate(-100%,-50%);
+  margin-left: -15px;
+  margin-top: 1px;
+  padding:12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 20px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  background: rgb(255, 139, 77);
+  opacity: 0;
+  transition: 0.4s;
+}
+.delete-btn:hover{
+  opacity: 1;
+  transition: 0.4s;
 }

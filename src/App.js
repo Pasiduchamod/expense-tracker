@@ -5,8 +5,11 @@ import Incexp from './Components/Incexp';
 import TransactionList from './Components/TransactionList'
 import AddTransaction from './Components/AddTransaction';
 
+import { GlobalProvider } from './Context/GlobalState';
+
 function App() {
   return (
+    <GlobalProvider>
     <div className='container'>
       <Header/>
       <Balance/>
@@ -14,6 +17,7 @@ function App() {
       <TransactionList/>
       <AddTransaction/>
     </div>
+    </GlobalProvider>
   );
 }
 
